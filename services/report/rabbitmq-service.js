@@ -1,4 +1,5 @@
 const amqlib = require('amqplib')
+
 class RabbitMQ {
     constructor() {
         this.url = `amqp://${process.env.RABBITMQ_LOGIN}:${process.env.RABBITMQ_PASSWORD}@${process.env.RABBITMQ_HOST}:${process.env.RABBITMQ_PORT}/${process.env.RABBITMQ_VHOST}`
